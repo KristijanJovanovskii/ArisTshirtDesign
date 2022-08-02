@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/user.css">
+</head>
+<body>
+    
+    <img src="img/giphy.gif" class="loader" alt="">
+
+    <div class="alert-box">
+        <img src="img/error.png" class="alert-img" alt="">
+        <p class="alert-msg">Error message</p>
+    </div>
+
+    <img src="img/aris original_2022-03-06_19-46-29-286.png" class="logo" alt="">
+
+    <!-- become user element -->
+    <div class="become-user hide">
+        <p class="heading">Become User</p>
+        <p class="des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni suscipit, exercitationem accusamus porro iure, ut ratione modi laboriosam voluptates itaque libero accusantium laudantium nobis similique voluptatum omnis quod dolor numquam!</p>
+        <button class="btn" id="apply-btn">apply for user account</button>
+    </div>
+
+    <!-- apply form -->
+    <div class="apply-form">
+        <input type="text" id="client-name" placeholder="client name">
+        <textarea id="client-add" placeholder="size, model"></textarea>
+        <textarea id="about" placeholder="your idea"></textarea>
+        <input type="text" id="number" placeholder="number">
+        <input type="checkbox" checked class="checkbox" id="terms">
+        <label for="terms">agree to our <a href="">terms</a></label>
+        <button class="submit-btn" id="apply-form-btn">apply</button>
+    </div>
+
+    <!-- user ideas -->
+    <div class="user-idea hide">
+        <div class="add-product">
+            <p class="add-product-title">add your idea</p>
+            <button class="btn">add product</button>
+        </div>
+        <img src="img/no-products.png" class="no-product-image" alt="">
+    </div>
+
+    <script src="js/token.js"></script>
+    <script src="js/user.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+body{
+    display: block;
+    padding: 0 10vw;
+    background-image: url('../img/brick-wall-black-and-white.png');
+    color: #ee950f;
+    
+}
+ 
+.logo{
+    height: 200px;
+    width: auto;
+
+}
+
+.product-info{
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: .75fr 1.25fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 20px;
+}
+
+.product-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(192, 182, 182);
+    background-size:cover;
+    border: 4px solid #773F45;
+    border-radius: 10px;
+    grid-row: span 2;
+    text-shadow: 0 0 10px rgb(216, 212, 212);
+}
+
+.upload-image-sec, .select-sizes{
+    background-color: rgb(119, 63, 69);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.text img{
+    height: 20px;
+    margin-right: 10px;
+}
+
+.upload-catalouge{
+    width: 100%;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+}
+
+.upload-image{
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    cursor: pointer;
+    background-size: cover;
+}
+
+.upload-image:hover{
+    background: rgba(0, 0, 0, 0.2);
+    background-size: cover;
+}
+
+.sizes{
+    margin-top: 30px;
+}
+
+.size-checkbox{
+    -webkit-appearance: none;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ee950f;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    position: relative;
+    color: #ee950f;
+}
+
+.size-checkbox::after{
+    content: attr(value);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.size-checkbox:checked{
+    background: #ee950f;
+    color: #fff;
+}
+
+.buttons{
+    margin: 20px 0  50px;
+}
+
+.btn{
+    padding: 10px 30px;
+    text-transform: capitalize;
+    color: #fff;
+    background: #ee950f;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#save-btn{
+    background: #a9a9a9;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.user-contact{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.user-contact input{
+    margin: 0;
+}

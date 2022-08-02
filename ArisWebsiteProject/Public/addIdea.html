@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aris Design: Your Idea</title>
+
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/addIdea.css">
+
+</head>
+<body>
+
+    <img src="img/giphy.gif" class="loader" alt="">
+
+    <div class="alert-box">
+        <img src="img/error.png" class="alert-img" alt="">
+        <p class="alert-msg"></p>
+    </div>
+
+    <img src="img/aris original_2022-03-06_19-46-29-286.png" class="logo" alt="">
+    
+        <!-- product image-->
+        <div class="product-info">
+            <div class="product-image">product image</div>
+            <div class="upload-image-sec">
+                <!--upluad inputs-->
+                <p class="text"><img src="img/camera.png" alt="">Upload image</p>
+                <div class="upload-catalouge">
+                    <input type="file" class="fileupload" id="first-file-upload-btn" hidden>
+                    <label for="first-file-upload-btn" class="upload-image"></label>
+                    <input type="file" class="fileupload" id="second-file-upload-btn" hidden>
+                    <label for="second-file-upload-btn" class="upload-image"></label>
+                    <input type="file" class="fileupload" id="third-file-upload-btn" hidden>
+                    <label for="third-file-upload-btn" class="upload-image"></label>
+                    <input type="file" class="fileupload" id="fourth-file-upload-btn" hidden>
+                    <label for="fourth-file-upload-btn" class="upload-image"></label>
+
+                </div>
+            </div>
+            <div class="select-sizes">
+                <p class="text">Sizes</p>
+                <div class="sizes">
+                    <input type="checkbox" class="size-checkbox" id="s" value="s">
+                    <input type="checkbox" class="size-checkbox" id="m" value="m">
+                    <input type="checkbox" class="size-checkbox" id="l" value="l">
+                    <input type="checkbox" class="size-checkbox" id="xl" value="xl">
+                </div>
+                <div class="buttons">
+                <button class="btn" id="add-btn">add idea</button>
+                <button class="btn" id="save-btn">save product</button>
+                </div>
+            </div>
+
+             
+        </div>
+
+        <div class="user-contact">
+            <input type="number" id="user-number" placeholder="Contact Number">
+            <input type="text" id="user-Email" placeholder="Email">
+            <input type="number" id="peaces" placeholder="Pieces">
+        </div>
+    </div>
+    
+<script src="js/token.js"></script>
+<script src="js/addIdea.js"></script>
+
+</body>
+</html>
